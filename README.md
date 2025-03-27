@@ -53,4 +53,6 @@ CountryName CountryCode UserName PhoneNumber Email
 -- The email is simulated and not really send the email.
 
 
-
+## ⚠️ Restrictions  
+- This repository is **read-only** for non-owners.  
+- Forking or modifications are not permitted without explicit permission.  
