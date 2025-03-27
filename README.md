@@ -33,10 +33,14 @@ A C++ application to manage contacts with phone/email validation and file storag
 
 ### File structure
 .
-├── main.cpp          # Program entry point
-├── interface.cpp     # User menus and input
-├── backend.cpp       # Core logic and file handling
-└── Contacts.txt      # Auto-generated contact database
+├── main.cpp 
+# Program entry point
+├── interface.cpp 
+# User menus and input
+├── backend.cpp   
+# Core logic and file handling
+└── Contacts.txt      
+# Auto-generated contact database
 
 ---
 
