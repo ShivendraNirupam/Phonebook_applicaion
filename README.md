@@ -1,90 +1,52 @@
-#Phone_Book
-##Overview
-This project is a Contact Management System that allows users to store, search, delete, and display contact information, as well as simulate sending emails to contacts. The system supports contacts from various countries with validation for phone numbers and email addresses.
+# Contact Management System  
 
-##Features
-Add Contacts: Store contact details including name, phone number, country code, and email.
+A C++ application to manage contacts with phone/email validation and file storage.  
 
-Search Contacts: Find contacts by name and display their details.
+---
 
-Delete Contacts: Remove contacts from the system.
+## Features  
 
-Display All Contacts: View all stored contacts in an organized manner.
+### Core Functions  
+- **Add Contacts**: Store name, phone number, country code, and email.  
+- **Search Contacts**: Find contacts by name.  
+- **Delete Contacts**: Remove entries permanently.  
+- **Display All Contacts**: View all saved contacts.  
+- **Send Email (Simulated)**: Pretend to email a contact.  
 
-Send Email: Simulate sending an email to a contact.
+### Validation  
+- ✅ Phone numbers: Country-specific digit checks.  
+- ✅ Emails: Regex format validation.  
+- ✅ Unique names: No duplicates allowed.  
 
-Data Persistence: Contacts are saved to and loaded from a file (Contacts.txt).
+---
 
-##Requirements
-C++ compiler (supporting C++11 or later)
+## How to Use  
 
-Standard Library headers (<bits/stdc++.h>, <fstream>, <regex>, etc.)
+### Compile and Run  
+- Go to the phonebook directory.
+- Type the following command in the terminal.
+- g++ main.cpp interface.cpp backend.cpp -o {write your output file name replacing the bracket}.
+- then run it using main.exe or ./main.exe
 
-#Usage
-Compile the Program:
+---
 
-bash
-Copy
-g++ main.cpp -o contact_manager
-Run the Program:
 
-bash
-Copy
-./contact_manager
-Menu Options:
+### File structure
+.
+├── main.cpp          # Program entry point
+├── interface.cpp     # User menus and input
+├── backend.cpp       # Core logic and file handling
+└── Contacts.txt      # Auto-generated contact database
 
-1. Add Contact: Enter the contact's name, email, phone number, and country code. The system validates the input and ensures uniqueness.
+---
 
-2. Search Contact: Enter a name to search for the contact's details.
-
-3. Delete Contact: Enter a name to delete the contact.
-
-4. Display All Contacts: View all stored contacts.
-
-5. Send Email: Enter a contact's name and compose a message to simulate sending an email.
-
-6. Exit: Close the application.
-
-##File Structure
-main.cpp: Entry point of the program, initializes the interface.
-
-interface.cpp: Handles user interactions and menu navigation.
-
-backend.cpp: Implements core functionalities like adding, searching, deleting contacts, and file operations.
-
-##Data Storage
-Contacts are stored in Contacts.txt with the following format:
-
-Copy
+### Data Storage
 CountryName CountryCode UserName PhoneNumber Email
-Validation Rules
-Phone Numbers: Validated based on country-specific digit lengths.
 
-Emails: Validated using a regex pattern to ensure correct format.
+---
 
-Unique Names: Ensures no duplicate contact names are allowed.
+## Notes
+-- The email is simulated and not really send the email.
 
-Supported Countries
-The system supports phone numbers from various countries, including:
 
-United States, Canada, India, United Kingdom, Australia, China, Japan, Germany, France, Italy, Brazil, Russia, and more.
 
-##Example Usage
-Add a contact:
-
-Copy
-Name: John Doe
-Email: john@example.com
-Phone Number: 1234567890
-Country Code: 1 (for United States)
-Search for "John Doe" to view details.
-
-Send an email to "John Doe" with a custom message.
-
-##Notes
-The email sending feature is simulated and does not actually send emails.
-
-The program handles invalid inputs gracefully and prompts the user to re-enter data if necessary.
-
-##License
-This project is open-source and available for free use. Modify and distribute as needed.
