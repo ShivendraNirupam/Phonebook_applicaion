@@ -31,16 +31,16 @@ A C++ application to manage contacts with phone/email validation and file storag
 ---
 
 
-### File structure
+## File structure
 .
+### Program entry point
 ├── main.cpp 
-# Program entry point
+### User menus and input
 ├── interface.cpp 
-# User menus and input
+### Core logic and file handling
 ├── backend.cpp   
-# Core logic and file handling
+### Auto-generated contact database
 └── Contacts.txt      
-# Auto-generated contact database
 
 ---
 
